@@ -1,0 +1,20 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+PS1='[\u@\h \W]\$ '
+
+# alias prime-run="DRI_PRIME=1"
+alias autoremove="pacman -Qdtq | sudo pacman -Rns -"
+alias vscodium="codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland"
+alias auto-reflector="sudo reflector -c ES -c PT -c DE -c FR --sort rate --latest 20 --verbose --save /etc/pacman.d/mirrorlist"
+alias spotx='bash <(curl -sSL https://spotx-official.github.io/run.sh)'
+
+PATH=/home/lyra/.local/share/sf/cli/bin:$PATH
+
+eval "$(starship init bash)"
