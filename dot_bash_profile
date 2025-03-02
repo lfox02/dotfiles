@@ -5,6 +5,6 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 export PATH="~/.local/share/flutter/bin:$PATH"
-export PATH='~/.local/share/sf/cli/bin:$PATH'
+export PATH="~/.local/share/sf/cli/bin:$PATH"
 export ANDROID_HOME="/home/lyra/Android/Sdk"
 export CHROME_EXECUTABLE="thorium-browser"
